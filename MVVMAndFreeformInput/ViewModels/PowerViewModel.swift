@@ -37,7 +37,7 @@ class PowerViewModel {
        // Now check that the string in providedExponent can be
        // converted into an integer, and that the value is
        // more than or equal to 1
-       guard let exponent = Double(providedExponent) else {
+       guard let exponent = Int(providedExponent) else {
            recoverySuggestion = "Please provide an integer value of 0 or greater for the exponent."
            
            return nil

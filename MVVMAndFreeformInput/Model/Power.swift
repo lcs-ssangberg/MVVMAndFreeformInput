@@ -9,7 +9,8 @@ struct Power {
     var base: Double
     
     // The exponent of a power must be an integer
-    var exponent: Double
+    var exponent: Int
+    
     
     // MARK: Computed properties
      
@@ -31,7 +32,20 @@ struct Power {
     // We will implement code that mimics this second example.
     var result: Double {
 
-        return pow(base, exponent)
+        //check 0 exp
+        if exponent == 0 {
+            return 1.0
+        } else {
+            
+            var solution = 1.0
+            
+            //multiply the base by the exponent
+            for _ in 1...abs(exponent) {
+                solution *= base
+            }
+            
+            return solution
+        }
         
     }
 }

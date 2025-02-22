@@ -40,9 +40,24 @@ struct PowerView: View {
  
                         Text("=")
                             .font(.system(size: 96))
- 
-                        Text("\(power.result.formatted())")
-                            .font(.system(size: 96))
+                        
+                        //checking pos/neg exponents
+                        if power.exponent >= 0 {
+                            Text("\(power.result.formatted())")
+                                .font(.system(size: 96))
+                        } else {
+                            VStack(spacing: 0) {
+                                Text("1")
+                                    .font(.system(size: 96))
+                                
+                                Rectangle()
+                                    .frame(height: 3)
+                                
+                                Text("\(power.result.formatted())")
+                                    .font(.system(size: 96))
+                            }
+                        }
+
                     }
                 }
                 .lineLimit(1)
