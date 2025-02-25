@@ -63,6 +63,17 @@ struct PowerView: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
                 .frame(height: 300)
+                
+                // Add a button so that the result can be saved
+                Button {
+                    viewModel.saveResult()
+                    // DEBUG: Show how many items are in the resultHistory array
+                    print("There are \(viewModel.resultHistory.count) elements in the resultHistory array.")
+                } label: {
+                    Text("Save")
+                }
+                .buttonStyle(.borderedProminent)
+                .padding(.bottom)
  
             } else {
                 
@@ -83,8 +94,19 @@ struct PowerView: View {
             TextField("Exponent", text: $viewModel.providedExponent)
                 .textFieldStyle(.roundedBorder)
  
-            // Extra space at bottom
-            Spacer()
+            // Show a title for the history
+            HStack {
+                Text("History")
+                    .bold()
+                Spacer()
+            }
+            .padding(.vertical)
+             
+            // Iterate over the history of results
+            List(viewModel.resultHistory) { priorResult in
+                PowerItemView(power: priorResult)
+            }
+            .listStyle(.plain)
         }
         .padding()
     }

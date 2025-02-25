@@ -13,6 +13,7 @@
 		49A757112D68E57B00BA5776 /* PowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7570C2D68E57B00BA5776 /* PowerView.swift */; };
 		49A757132D68E62300BA5776 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A757122D68E62300BA5776 /* Power.swift */; };
 		49A757152D68E68800BA5776 /* PowerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A757142D68E68800BA5776 /* PowerViewModel.swift */; };
+		49C9A36C2D6E06CA00FEB50C /* PowerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9A36B2D6E06CA00FEB50C /* PowerItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		49A7570C2D68E57B00BA5776 /* PowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerView.swift; sourceTree = "<group>"; };
 		49A757122D68E62300BA5776 /* Power.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
 		49A757142D68E68800BA5776 /* PowerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerViewModel.swift; sourceTree = "<group>"; };
+		49C9A36B2D6E06CA00FEB50C /* PowerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		49A757092D68E57B00BA5776 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49C9A36B2D6E06CA00FEB50C /* PowerItemView.swift */,
 				49A7570C2D68E57B00BA5776 /* PowerView.swift */,
 			);
 			path = Views;
@@ -174,6 +177,7 @@
 				49A757102D68E57B00BA5776 /* MVVMAndFreeformInputApp.swift in Sources */,
 				49A757132D68E62300BA5776 /* Power.swift in Sources */,
 				49A757112D68E57B00BA5776 /* PowerView.swift in Sources */,
+				49C9A36C2D6E06CA00FEB50C /* PowerItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

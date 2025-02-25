@@ -1,9 +1,12 @@
 import Foundation
  
 // MODEL
-struct Power {
+struct Power: Identifiable {
     
     // MARK: Stored properties
+    
+    //holds uuuid of instance of power
+    let id = UUID()
     
     // The base of the power can hold any numeric value
     var base: Double
